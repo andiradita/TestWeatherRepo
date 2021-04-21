@@ -26,7 +26,7 @@
                                 <rect key="frame" x="50" y="486.5" width="314" height="29"/>
                                 <color key="backgroundColor" red="0.2156862745" green="0.59215686270000001" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Pop Up">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -40,22 +40,40 @@
                                     <constraint firstAttribute="width" constant="240" id="GL1-Ud-t6e"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBD-bK-mw3">
+                                <rect key="frame" x="50" y="540.5" width="314" height="30"/>
+                                <color key="backgroundColor" red="0.85882352939999995" green="0.29803921570000003" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Help">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="helpPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bJM-3N-yqT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aBD-bK-mw3" secondAttribute="trailing" constant="50" id="5Bo-Xu-6QT"/>
                             <constraint firstItem="sls-dd-7y3" firstAttribute="top" secondItem="UVd-5z-hJu" secondAttribute="bottom" constant="25" id="772-XG-rUf"/>
                             <constraint firstItem="PQu-CX-y6K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="868-oW-Sns"/>
                             <constraint firstItem="UVd-5z-hJu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-150" id="Z9N-iw-j8N"/>
                             <constraint firstItem="PQu-CX-y6K" firstAttribute="top" secondItem="sls-dd-7y3" secondAttribute="bottom" constant="25" id="boS-Q1-FXB"/>
                             <constraint firstItem="sls-dd-7y3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d2g-m3-Xh8"/>
+                            <constraint firstItem="aBD-bK-mw3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dZM-TU-eRP"/>
+                            <constraint firstItem="aBD-bK-mw3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="n9q-pC-dRZ"/>
                             <constraint firstItem="UVd-5z-hJu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="otc-xz-M6s"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PQu-CX-y6K" secondAttribute="trailing" constant="50" id="vqz-1C-h6a"/>
+                            <constraint firstItem="aBD-bK-mw3" firstAttribute="top" secondItem="PQu-CX-y6K" secondAttribute="bottom" constant="25" id="yr5-22-Z9o"/>
                             <constraint firstItem="PQu-CX-y6K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="zaI-zw-Wuv"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="LabelText" destination="UVd-5z-hJu" id="AIo-31-fjc"/>
+                        <outlet property="btnPopUp" destination="PQu-CX-y6K" id="zOX-lt-0AL"/>
+                        <outlet property="helpButton" destination="aBD-bK-mw3" id="htg-ng-FRT"/>
+                        <outlet property="imageNew" destination="sls-dd-7y3" id="gQI-nC-uQE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
