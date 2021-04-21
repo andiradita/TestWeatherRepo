@@ -10,6 +10,10 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var LabelText: UILabel!
+    @IBOutlet weak var btnPopUp: UIButton!
+    @IBOutlet weak var helpButton: UIButton!
+    @IBOutlet weak var imageNew: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.LabelText.text = "Hello Broww"
@@ -26,5 +30,9 @@ class ViewController: UIViewController {
         self.present(alert, animated: true)
     }
     
+    @IBAction func helpPressed(_ sender: UIButton) {
+        print("Hello help")
+        
+    }
 }
 
